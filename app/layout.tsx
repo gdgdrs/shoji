@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import { Hachi_Maru_Pop } from "next/font/google";
+import Link from "next/link";
 
 const font = Hachi_Maru_Pop({
   weight: "400",
@@ -60,9 +61,9 @@ export default function RootLayout({
             </div>
           </div>
           <div className="navbar-center">
-            <a href="/circles" className="btn text-xl btn-ghost">
+            <Link href="/circles" className="btn text-xl btn-ghost">
               サークル一覧
-            </a>
+            </Link>
           </div>
           <div className="navbar-end">
             <button className="btn btn-circle btn-ghost">
@@ -106,9 +107,9 @@ export default function RootLayout({
         <footer className="mt-auto footer bg-gray-800 p-10 text-gray-300 sm:footer-horizontal">
           <nav>
             <h6 className="footer-title">Menu</h6>
-            <a className="link link-hover" href="/circles">
+            <Link className="link link-hover" href="/circles">
               サークル一覧
-            </a>
+            </Link>
             <a className="link link-hover">サークル性の方</a>
           </nav>
           <nav>
